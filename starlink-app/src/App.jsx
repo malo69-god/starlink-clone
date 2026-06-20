@@ -203,7 +203,7 @@ function App() {
 
      </section>
        <section style= {{display:'flex', flexWrap:'wrap',
-                            backgroundImage:`url(${car})`,
+                            backgroundImage:`url(${green})`,
                             backgroundPosition:'center',
                             backgroundSize:'cover',
                             width:'100%',
