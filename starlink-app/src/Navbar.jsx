@@ -4,8 +4,9 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
   // 1. Structure menuItems as objects containing both the label and its URL path
   const menuItems = [
-    { name: 'Home', path: '/' },
-    { name: 'Residential', path: '/Residential' }
+     { name: 'Residential', path: '/Residential' }
+     ,{ name: 'Roam', path: '/Roam' }
+   
   ];
 
   return (

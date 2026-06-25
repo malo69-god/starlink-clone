@@ -7,7 +7,7 @@ const Floating = () => {
   useEffect(() => {
     const handleScroll = () => {
       // FIXED: Calculates exactly 70% of the viewport height in pixels
-      const heroHeight = window.innerHeight * 0.7; 
+      const heroHeight = window.innerHeight * 0.9; 
       
       if (window.scrollY > heroHeight) {
         setIsVisible(true);
@@ -32,8 +32,8 @@ const Floating = () => {
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
-        backgroundColor: 'rgba(236, 224, 224, 0.75)',
-        backdropFilter: 'blur(10px)',
+        backgroundColor: 'rgba(236, 224, 224, 0.2)',
+        backdropFilter: 'blur(20px)',
         borderRadius: '50px',
         boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
         zIndex: 1000,

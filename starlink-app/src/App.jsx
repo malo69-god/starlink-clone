@@ -6,6 +6,7 @@ import Footer from "./Footer";
 // 1. Import your page components
 import Home from "./Home"; 
 import Residential from "./Residential"; 
+import Roam from './Roam';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Residential" element={<Residential />} />
+          <Route path="Roam" element={<Roam/>}/>
         </Routes>
 
         {/* The Footer stays visible at the bottom of every page */}
