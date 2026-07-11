@@ -13,7 +13,7 @@ const Footer = () => {
         gap: '25px'
       }}
     >
-      {/* Top Row: Navigation Links */}
+    
       <div 
         style={{
           display: 'flex',
@@ -30,17 +30,17 @@ const Footer = () => {
         <span style={{ cursor: 'pointer' }}>Privacy Preferences</span>
       </div>
 
-      {/* Bottom Row: Logo and Copyright text */}
+      
       <div 
         style={{
           display: 'flex',
           alignItems: 'center',
           gap: '15px',
           fontSize: '12px',
-          color: '#b3b3b3' // Slightly muted silver/gray text
+          color: '#b3b3b3' 
         }}
       >
-        {/* SVG for the X / Twitter Logo */}
+      
         <svg 
           viewBox="0 0 24 24" 
           aria-hidden="true" 
