@@ -356,7 +356,7 @@ const Roam = () => {
         style={{
           display: "flex",
           flexWrap: "wrap",
-          backgroundImage: `linear-gradient(to right,rgba(0, 0, 0, 0.69)0%, rgba(0,0,0,0)70%) ,url(${car})`,
+          backgroundImage: `linear-gradient(to right,rgba(0, 0, 0, 0.69)0%, rgba(0,0,0,0.69)70%) ,url(${car})`,
           backgroundPosition: "center",
           backgroundSize: "cover",
           width: "100%",
