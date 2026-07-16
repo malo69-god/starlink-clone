@@ -5,6 +5,7 @@ import Buttonx from "./Buttonx";
 import light from "./res/ligh.jpeg";
 import rain from "./res/lighting.jpeg";
 import shed from "./res/shed.jpeg";
+import out from "./res/out1.jpeg";
 const Residential = () => {
   return (
     <>
@@ -65,6 +66,7 @@ const Residential = () => {
               fontSize: "16px",
               outline: "none",
               fontFamily: "sans-serif",
+              fontWeight: "bolder",
             }}
           />
 
@@ -412,8 +414,244 @@ const Residential = () => {
           </h3>
           <div style={{ display: "flex", marginTop: "50px", color: "black" }}>
             <Buttonx style={{ color: "black", width: "200px" }}>
-             view speeds
+              view speeds
             </Buttonx>
+          </div>
+        </div>
+      </section>
+
+      <section
+        style={{
+          backgroundImage: `linear-gradient(to right,rgba(0, 0, 0, 0.9)0%, rgba(0, 0, 0, 0.89)70%), url(${bg2})`,
+          backgroundColor: "black",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          minHeight: "120vh",
+          backgroundAttachment: "fixed",
+        }}
+      >
+        <div style={{ paddingTop: "15vh", width: "100%" }}>
+          <h2
+            style={{
+              fontSize: "46px",
+              fontWeight: "bold",
+              textAlign: "center",
+              color: "white",
+            }}
+          >
+            What our customers say{" "}
+          </h2>
+        </div>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            gap: "20px",
+            color: "#121212",
+            flexWrap: "wrap",
+            justifyContent: "center",
+            marginTop: "20px",
+          }}
+        >
+          {/* Card 1 */}
+          <div
+            style={{
+              width: "350px",
+              height: "320px",
+
+              display: "flex",
+              flexDirection: "column",
+              color: "#fafafa",
+
+              fontFamily: "sans-serif",
+              paddingLeft: "30px",
+              borderRadius: "8px",
+              fontSize: "12px",
+              textAlign: "center",
+            }}
+          >
+            <div style={{ paddingTop: "10px" }}>
+              <h2>Connected during storms</h2>
+              <p style={{ fontStyle: "italic", paddingTop: "5px" }}>
+                Where we live in Porto Alegre, storms often overload mobile
+                networks. During the last one, nobody could connect. With
+                Starlink, we still had internet and could follow updates and
+                talk to family."
+              </p>
+              <p style={{ paddingTop: "5px" }}>
+                — Lucas R., Rio Grande do Sul, Brazil
+              </p>
+            </div>
+          </div>
+          <div
+            style={{
+              width: "350px",
+              height: "320px",
+
+              display: "flex",
+              flexDirection: "column",
+              color: "#fafafa",
+
+              fontFamily: "sans-serif",
+              paddingLeft: "30px",
+              borderRadius: "8px",
+              fontSize: "12px",
+              textAlign: "center",
+            }}
+          >
+            <div style={{ paddingTop: "10px" }}>
+              <h2>Connected during storms</h2>
+              <p style={{ fontStyle: "italic", paddingTop: "5px" }}>
+                "Where we live in Porto Alegre, storms often overload mobile
+                networks. During the last one, nobody could connect. With
+                Starlink, we still had internet and could follow updates and
+                talk to family."
+              </p>
+              <p style={{ paddingTop: "5px" }}>
+                — Lucas R., Rio Grande do Sul, Brazil
+              </p>
+            </div>
+          </div>{" "}
+          <div
+            style={{
+              width: "350px",
+              height: "320px",
+
+              display: "flex",
+              flexDirection: "column",
+              color: "#fafafa",
+
+              fontFamily: "sans-serif",
+              paddingLeft: "30px",
+              borderRadius: "8px",
+              fontSize: "12px",
+              textAlign: "center",
+            }}
+          >
+            <div style={{ paddingTop: "10px" }}>
+              <h2>Independence from local providers</h2>
+              <p style={{ fontStyle: "italic", paddingTop: "5px" }}>
+                "After a rather long and frightening typhoon, we lost internet
+                with our last internet provider. Their customer service was very
+                bureaucratic and resulted in nothing. We had no connectivity for
+                a month. Then my friend told me about Starlink, so I ordered it
+                for my home. I love the independence from local providers and
+                the ease of Starlink!"
+              </p>
+              <p style={{ paddingTop: "5px" }}>— Robert R., Okinawa, Japan</p>
+            </div>
+          </div>
+        </div>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            gap: "20px",
+            color: "#121212",
+            flexWrap: "wrap",
+            justifyContent: "center",
+            marginTop: "20px",
+          }}
+        >
+          <div
+            style={{
+              width: "550px",
+
+              color: "white",
+            }}
+          >
+            <div
+              style={{
+                backgroundImage: `url(${out})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                width: "500px",
+                height: "250px",
+              }}
+            ></div>
+          </div>
+          <div
+            style={{
+              width: "500px",
+
+              color: "white",
+
+              alignItems: "flex-start",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+            }}
+          >
+            <h1>30-day trial</h1>
+            <p>
+              Try Starlink for 30 days and if not satisfied, get a full refund
+            </p>
+            <Buttonx
+              style={{ color: "black", paddingTop: "10px", marginTop: "20px" }}
+            >
+              Get started
+            </Buttonx>
+          </div>
+          <div>
+            <div style={{ paddingTop: "15vh", width: "100%" }}>
+              <h2
+                style={{
+                  fontSize: "46px",
+                  fontWeight: "bold",
+                  textAlign: "center",
+                  color: "white",
+                }}
+              >
+                Receive Starlink email updates
+              </h2>
+            </div>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                gap: "10px",
+                width: "100%",
+                maxWidth: "700px",
+                marginLeft: "3vw",
+              }}
+            >
+              {/* The Input Field */}
+              <input
+                type="text"
+                placeholder="E-mail"
+                style={{
+                  padding: "10px 20px",
+                  backgroundColor: "rgba(255, 255, 255, 0.1)",
+                  border: "1px solid #ffffff",
+                  borderRadius: "6px",
+                  color: "white",
+                  fontSize: "16px",
+                  outline: "none",
+                  fontFamily: "sans-serif",
+                  width: "600px",
+                }}
+              />
+
+              <button
+                style={{
+                  padding: "10px 20px",
+                  backgroundColor: "#ffffff",
+                  color: "#111111",
+                  border: "none",
+                  borderRadius: "6px",
+                  fontSize: "16px",
+                  fontWeight: "bold",
+                  cursor: "pointer",
+                  fontFamily: "sans-serif",
+                  width: "150px",
+                }}
+              >
+                Sign up
+              </button>
+            </div>
+            <p style={{ color: "white" }}>
+              By clicking Sign Up, you agree to our Privacy Policy.
+            </p>
           </div>
         </div>
       </section>
