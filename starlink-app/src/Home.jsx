@@ -8,6 +8,7 @@ import rain from "./img/rain.jpeg";
 import car from "./img/car.jpeg";
 import green from "./img/green.jpeg";
 import yard from "./img/yard.jpeg";
+import star from "./img/star.jpeg"
 
 const Home = () => {
   return (
@@ -16,7 +17,7 @@ const Home = () => {
       <section style={{
         display: 'flex', 
         flexWrap: 'wrap',
-        backgroundImage: `url(${home})`,
+        backgroundImage: `url(${star})`,
         backgroundPosition: 'center',
         backgroundSize: 'cover',
         width: '100%',
