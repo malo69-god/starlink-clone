@@ -1,30 +1,37 @@
+import { Link } from "react-router-dom";
 
+const Buttonx = ({ to, onClick, children, style, ...rest }) => {
+  // 1. We store your styles in a variable so both the Link and Button can share them
+  const baseStyles = {
+    backgroundColor: "#ffffff",
+    color: "black",
+    padding: "12px 24px",
+    border: "none",
+    borderRadius: "4px",
+    cursor: "pointer",
+    fontSize: "16px",
+    fontWeight: "bold",
+    transition: "background-color 0.2s ease",
+    display: "inline-block",
+    textDecoration: "none",
+    textAlign: "center",
 
-const Buttonx =({ onClick, children, style, ...rest }) =>{
-  
-  
+    ...style,
+  };
+
+  if (to) {
+    return (
+      <Link to={to} style={baseStyles} {...rest}>
+        {children}
+      </Link>
+    );
+  }
+
   return (
-    <button 
-      onClick={onClick} 
-      {...rest} 
-      style={{ 
-        // Your default styles:
-        backgroundColor: '#ffffff',
-        color: 'white',
-        padding: '10px 20px',
-        border: 'none',
-        borderRadius: '5px',
-        cursor: 'pointer',
-        fontSize: '16px',
-        transition: 'background-color 0.2s ease',
-        
-        // Overwrite defaults with any styles passed from the outside:
-        ...style 
-      }}
-    >
+    <button onClick={onClick} style={baseStyles} {...rest}>
       {children}
     </button>
   );
-}
+};
 
 export default Buttonx;

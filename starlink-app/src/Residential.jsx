@@ -320,11 +320,7 @@ const Residential = () => {
             locations where high-speed internet has traditionally been too
             expensive, unreliable, or entirely unavailable.{" "}
           </p>
-          <div style={{ display: "flex", color: "black" }}>
-            <Buttonx style={{ color: "black", width: "200px" }}>
-              Check availability
-            </Buttonx>
-          </div>
+        
         </div>
       </section>
       <section

@@ -1,4 +1,5 @@
-import Buttonx from "./Buttonx";
+ import { useState } from 'react';
+import Buttonx from "./Buttonx"
 import Floating from "./Floating";
 
 // Image Imports moved to this file
@@ -10,7 +11,9 @@ import green from "./img/green.jpeg";
 import yard from "./img/yard.jpeg";
 import star from "./img/star.jpeg";
 
+import Getstarted from "./Getstarted";
 const Home = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <>
       {/* Section 1: Hero Landing */}
@@ -55,7 +58,12 @@ const Home = () => {
               color: "black",
             }}
           >
-            <Buttonx style={{ color: "black" }}>Get started</Buttonx>
+           <Buttonx 
+              onClick={() => setIsModalOpen(true)} 
+              style={{ color: "black" }}
+            >
+              Get started
+            </Buttonx>
             <Buttonx style={{ color: "white", backgroundColor: "#020000b3" }}>
               View pricing
             </Buttonx>
@@ -379,6 +387,10 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <Getstarted 
+        isOpen={isModalOpen} 
+        onClose={() => setIsModalOpen(false)} 
+      />
     </>
   );
 };
