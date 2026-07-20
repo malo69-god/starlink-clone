@@ -10,6 +10,8 @@ import car from "./img/car.jpeg";
 import green from "./img/green.jpeg";
 import yard from "./img/yard.jpeg";
 import star from "./img/star.jpeg";
+import RotatingText from "./RotatingText"
+import FadeIn from './FadeIn';
 
 import Getstarted from "./Getstarted";
 const Home = () => {
@@ -42,8 +44,9 @@ const Home = () => {
             marginTop: "250px",
           }}
         >
+          
           <h1 style={{ margin: "0 0 10px 0", lineHeight: "1.2" }}>
-            Fast, affordable <br /> internet
+            Fast, affordable <br />  internet
           </h1>
           <h3 style={{ marginBottom: "10px", fontWeight: "normal" }}>
             starting at
@@ -224,7 +227,7 @@ const Home = () => {
             marginLeft: "40px",
             marginTop: "250px",
           }}
-        >
+        > <FadeIn>
           <h1 style={{ margin: "0 0 10px 0", lineHeight: "1.2" }}>
             Reliable & resilient
           </h1>
@@ -244,7 +247,8 @@ const Home = () => {
             <Buttonx style={{ color: "black", width: "200px" }}>
               Learn More
             </Buttonx>
-          </div>
+           
+          </div> </FadeIn>
         </div>
       </section>
 
@@ -272,7 +276,7 @@ const Home = () => {
             marginLeft: "40px",
             marginTop: "250px",
           }}
-        >
+        ><FadeIn>
           <h1 style={{ margin: "0 0 10px 0", lineHeight: "1.2" }}>
             Internet for travel, <br /> road trips, <br />
             and commutes
@@ -285,7 +289,7 @@ const Home = () => {
             <Buttonx style={{ color: "black", width: "200px" }}>
               Learn More
             </Buttonx>
-          </div>
+          </div></FadeIn>
         </div>
       </section>
 
@@ -314,7 +318,7 @@ const Home = () => {
             marginRight: "10%",
             marginTop: "250px",
           }}
-        >
+        ><FadeIn>
           <h1 style={{ lineHeight: "1.2", color: "white" }}>
             Available globally
           </h1>
@@ -332,7 +336,7 @@ const Home = () => {
             <Buttonx style={{ color: "black", width: "200px" }}>
               Check availability
             </Buttonx>
-          </div>
+          </div></FadeIn>
         </div>
       </section>
 
@@ -360,7 +364,7 @@ const Home = () => {
             marginLeft: "40px",
             marginTop: "250px",
           }}
-        >
+        > <FadeIn>
           <h1
             style={{
               margin: "0 0 10px 0",
@@ -384,7 +388,7 @@ const Home = () => {
             <Buttonx style={{ color: "black", width: "200px" }}>
               Get The App
             </Buttonx>
-          </div>
+          </div></FadeIn>
         </div>
       </section>
       <Getstarted 
