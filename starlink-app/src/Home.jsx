@@ -1,17 +1,14 @@
- import { useState } from 'react';
-import Buttonx from "./Buttonx"
+import { useState } from "react";
+import Buttonx from "./Buttonx";
 import Floating from "./Floating";
 
-// Image Imports moved to this file
-import home from "./img/home.jpeg";
 import bg1 from "./img/bg1.png";
 import rain from "./img/rain.jpeg";
 import car from "./img/car.jpeg";
 import green from "./img/green.jpeg";
 import yard from "./img/yard.jpeg";
 import star from "./img/star.jpeg";
-import RotatingText from "./RotatingText"
-import FadeIn from './FadeIn';
+import FadeIn from "./FadeIn";
 
 import Getstarted from "./Getstarted";
 const Home = () => {
@@ -44,9 +41,8 @@ const Home = () => {
             marginTop: "250px",
           }}
         >
-          
           <h1 style={{ margin: "0 0 10px 0", lineHeight: "1.2" }}>
-            Fast, affordable <br />  internet
+            Fast, affordable <br /> internet
           </h1>
           <h3 style={{ marginBottom: "10px", fontWeight: "normal" }}>
             starting at
@@ -61,8 +57,8 @@ const Home = () => {
               color: "black",
             }}
           >
-           <Buttonx 
-              onClick={() => setIsModalOpen(true)} 
+            <Buttonx
+              onClick={() => setIsModalOpen(true)}
               style={{ color: "black" }}
             >
               Get started
@@ -227,28 +223,34 @@ const Home = () => {
             marginLeft: "40px",
             marginTop: "250px",
           }}
-        > <FadeIn>
-          <h1 style={{ margin: "0 0 10px 0", lineHeight: "1.2" }}>
-            Reliable & resilient
-          </h1>
-          <h3
-            style={{
-              marginBottom: "10px",
-              fontWeight: "normal",
-              lineHeight: "1.5",
-            }}
-          >
-            Extreme weather conditions can cause significant disruptions to
-            traditional internet networks. It is engineered to withstand heavy
-            rain and harsh winds—keeping you connected with reliable, high-speed
-            service when you need it most.
-          </h3>
+        >
+          {" "}
+          <FadeIn>
+            <h1 style={{ margin: "0 0 10px 0", lineHeight: "1.2" }}>
+              Reliable & resilient
+            </h1>
+          </FadeIn>
+          <FadeIn>
+            <h3
+              style={{
+                marginBottom: "10px",
+                fontWeight: "normal",
+                lineHeight: "1.5",
+              }}
+            >
+              Extreme weather conditions can cause significant disruptions to
+              traditional internet networks. It is engineered to withstand heavy
+              rain and harsh winds—keeping you connected with reliable,
+              high-speed service when you need it most.
+            </h3>
+          </FadeIn>
           <div style={{ display: "flex", marginTop: "50px", color: "black" }}>
-            <Buttonx style={{ color: "black", width: "200px" }}>
-              Learn More
-            </Buttonx>
-           
-          </div> </FadeIn>
+            <FadeIn>
+              <Buttonx style={{ color: "black", width: "200px" }}>
+                Learn More
+              </Buttonx>
+            </FadeIn>
+          </div>
         </div>
       </section>
 
@@ -276,20 +278,27 @@ const Home = () => {
             marginLeft: "40px",
             marginTop: "250px",
           }}
-        ><FadeIn>
-          <h1 style={{ margin: "0 0 10px 0", lineHeight: "1.2" }}>
-            Internet for travel, <br /> road trips, <br />
-            and commutes
-          </h1>
-          <h3 style={{ marginBottom: "10px", fontWeight: "normal" }}>
-            High-speed internet that moves with you, even in dead zones.
-            In-motion use available in select areas.
-          </h3>
+        >
+          <FadeIn>
+            <h1 style={{ margin: "0 0 10px 0", lineHeight: "1.2" }}>
+              Internet for travel, <br /> road trips, <br />
+              and commutes
+            </h1>
+          </FadeIn>
+          <FadeIn>
+            {" "}
+            <h3 style={{ marginBottom: "10px", fontWeight: "normal" }}>
+              High-speed internet that moves with you, even in dead zones.
+              In-motion use available in select areas.
+            </h3>
+          </FadeIn>
           <div style={{ display: "flex", marginTop: "50px", color: "black" }}>
-            <Buttonx style={{ color: "black", width: "200px" }}>
-              Learn More
-            </Buttonx>
-          </div></FadeIn>
+            <FadeIn>
+              <Buttonx style={{ color: "black", width: "200px" }}>
+                Learn More
+              </Buttonx>
+            </FadeIn>
+          </div>
         </div>
       </section>
 
@@ -318,25 +327,31 @@ const Home = () => {
             marginRight: "10%",
             marginTop: "250px",
           }}
-        ><FadeIn>
-          <h1 style={{ lineHeight: "1.2", color: "white" }}>
-            Available globally
-          </h1>
-          <p
-            style={{
-              marginBottom: "20px",
-              fontWeight: "normal",
-              color: "#e4e4e4",
-            }}
-          >
-            Delivering reliable connectivity in 160+ countries, territories, and
-            other markets around the world.
-          </p>
+        >
+          <FadeIn>
+            <h1 style={{ lineHeight: "1.2", color: "white" }}>
+              Available globally
+            </h1>
+          </FadeIn>
+          <FadeIn>
+            <p
+              style={{
+                marginBottom: "20px",
+                fontWeight: "normal",
+                color: "#e4e4e4",
+              }}
+            >
+              Delivering reliable connectivity in 160+ countries, territories,
+              and other markets around the world.
+            </p>
+          </FadeIn>
           <div style={{ display: "flex", color: "black" }}>
-            <Buttonx style={{ color: "black", width: "200px" }}>
-              Check availability
-            </Buttonx>
-          </div></FadeIn>
+            <FadeIn>
+              <Buttonx style={{ color: "black", width: "200px" }}>
+                Check availability
+              </Buttonx>
+            </FadeIn>
+          </div>
         </div>
       </section>
 
@@ -364,37 +379,40 @@ const Home = () => {
             marginLeft: "40px",
             marginTop: "250px",
           }}
-        > <FadeIn>
-          <h1
-            style={{
-              margin: "0 0 10px 0",
-              lineHeight: "1.2",
-              color: "#fffefe",
-            }}
-          >
-            Plug it in. Point at sky.
-          </h1>
-          <h3
-            style={{
-              marginBottom: "10px",
-              fontWeight: "normal",
-              color: "#fdf7f7",
-            }}
-          >
-            High-speed internet that moves with you, even in dead zones.
-            In-motion use available in select areas.
-          </h3>
+        >
+          <FadeIn>
+            <h1
+              style={{
+                margin: "0 0 10px 0",
+                lineHeight: "1.2",
+                color: "#fffefe",
+              }}
+            >
+              Plug it in. Point at sky.
+            </h1>
+          </FadeIn>
+          <FadeIn>
+            <h3
+              style={{
+                marginBottom: "10px",
+                fontWeight: "normal",
+                color: "#fdf7f7",
+              }}
+            >
+              High-speed internet that moves with you, even in dead zones.
+              In-motion use available in select areas.
+            </h3>
+          </FadeIn>
           <div style={{ display: "flex", marginTop: "50px", color: "black" }}>
-            <Buttonx style={{ color: "black", width: "200px" }}>
-              Get The App
-            </Buttonx>
-          </div></FadeIn>
+            <FadeIn>
+              <Buttonx style={{ color: "black", width: "200px" }}>
+                Get The App
+              </Buttonx>
+            </FadeIn>
+          </div>
         </div>
       </section>
-      <Getstarted 
-        isOpen={isModalOpen} 
-        onClose={() => setIsModalOpen(false)} 
-      />
+      <Getstarted isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </>
   );
 };

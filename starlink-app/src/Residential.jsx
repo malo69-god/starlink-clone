@@ -250,7 +250,7 @@ const Residential = () => {
                   paddingTop: "15px",
                 }}
               >
-                $130
+                $130 <span style={{fontSize:'15px'}}>/mo</span>
               </p>
             </div>
           </div>
@@ -320,7 +320,6 @@ const Residential = () => {
             locations where high-speed internet has traditionally been too
             expensive, unreliable, or entirely unavailable.{" "}
           </p>
-        
         </div>
       </section>
       <section
